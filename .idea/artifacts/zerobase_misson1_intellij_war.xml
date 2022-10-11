@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zerobase-misson1-intellij:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>zerobase-misson1-intellij</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="zerobase-misson1-intellij-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zerobase-misson1-intellij:war exploded" />
+    </root>
+  </artifact>
+</component>
