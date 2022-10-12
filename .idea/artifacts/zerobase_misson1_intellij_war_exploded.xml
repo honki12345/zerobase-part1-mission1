@@ -13,6 +13,15 @@
         <element id="directory" name="classes">
           <element id="module-output" name="zerobase-misson1-intellij" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:4.10.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio-jvm:3.0.0" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.31" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.6.20" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/zerobase-misson1-intellij-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
