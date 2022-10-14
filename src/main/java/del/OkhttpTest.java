@@ -1,3 +1,6 @@
+package del;
+
+import JDBC.Member;
 import okhttp3.*;
 
 import java.io.IOException;
@@ -16,8 +19,8 @@ public class OkhttpTest {
         urlBuilder.append("/" +  URLEncoder.encode("666751717366706736334942437857","UTF-8") ); /*인증키 (sample사용시에는 호출시 제한됩니다.)*/
         urlBuilder.append("/" +  URLEncoder.encode("json","UTF-8") ); /*요청파일타입 (xml,xmlf,xls,json) */
         urlBuilder.append("/" + URLEncoder.encode("TbPublicWifiInfo","UTF-8")); /*서비스명 (대소문자 구분 필수입니다.)*/
-        urlBuilder.append("/" + URLEncoder.encode("18000","UTF-8")); /*요청시작위치 (sample인증키 사용시 5이내 숫자)*/
-        urlBuilder.append("/" + URLEncoder.encode("18005","UTF-8")); /*요청종료위치(sample인증키 사용시 5이상 숫자 선택 안 됨)*/
+        urlBuilder.append("/" + URLEncoder.encode("17500","UTF-8")); /*요청시작위치 (sample인증키 사용시 5이내 숫자)*/
+        urlBuilder.append("/" + URLEncoder.encode("17700","UTF-8")); /*요청종료위치(sample인증키 사용시 5이상 숫자 선택 안 됨)*/
 
         OkHttpClient client = new OkHttpClient();
 
@@ -51,16 +54,17 @@ public class OkhttpTest {
                     .get("row").getAsJsonArray();
 
             Gson gson = new Gson();
-            List<PubWifi> result = new ArrayList<>();
+            List<Member> result = new ArrayList<>();
             for (int i = 0; i < itemArr.size(); i++) {
-                PubWifi wifi = gson.fromJson(itemArr.get(i), PubWifi.class);
+                Member wifi = gson.fromJson(itemArr.get(i), Member.class);
                 result.add(wifi);
             }
 
 
             // 출력
-            for (PubWifi wifi : result) {
-                System.out.println(wifi.X_SWIFI_ADRES1 + ": " + wifi.X_SWIFI_MAIN_NM);
+            for (Member wifi : result) {
+//                System.out.println(wifi.X_SWIFI_ADRES1 + ": " + wifi.X_SWIFI_MAIN_NM);
+                System.out.println(wifi);
             }
 
         }

@@ -1,4 +1,4 @@
-/* Java 1.8 샘플 코드 */
+package del;/* Java 1.8 샘플 코드 */
 
 
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.net.URLEncoder;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class ApiExplorer {
+public class ApiExplorerDel {
     public static void main(String[] args) throws IOException {
         StringBuilder urlBuilder = new StringBuilder("http://openapi.seoul.go.kr:8088"); /*URL*/
         urlBuilder.append("/" +  URLEncoder.encode("666751717366706736334942437857","UTF-8") ); /*인증키 (sample사용시에는 호출시 제한됩니다.)*/
