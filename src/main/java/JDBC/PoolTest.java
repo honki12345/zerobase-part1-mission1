@@ -23,7 +23,7 @@ public class PoolTest {
     private String password = "onebase";
 
     private int initailCon = 5;
-    private int maxCons = 10;
+    private int maxCons = 100;
     private int numCons = 0;
     private static PoolTest cp;
 
@@ -45,7 +45,7 @@ public class PoolTest {
         }
     }
     // ConnectionPool 객체
-    public static PoolTest getInstance() {
+    public static  PoolTest getInstance() {
         if (cp == null) {
             synchronized (PoolTest.class) {
                 cp = new PoolTest();
