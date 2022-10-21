@@ -222,7 +222,7 @@ public class MemberService {
                             mem.X_SWIFI_ADRES1, mem.X_SWIFI_ADRES2, mem.X_SWIFI_INSTL_FLOOR,
                             mem.X_SWIFI_INSTL_TY, mem.X_SWIFI_INSTL_MBY, mem.X_SWIFI_SVC_SE,
                             mem.X_SWIFI_CMCWR, mem.X_SWIFI_CNSTC_YEAR, mem.X_SWIFI_INOUT_DOOR,
-                            mem.X_SWIFI_REMARS3, mem.LNT, mem.LAT,
+                            mem.X_SWIFI_REMARS3, mem.LAT, mem.LNT,
                             mem.WORK_DTTM);
                 }
 //                this.list();
@@ -297,7 +297,6 @@ public class MemberService {
                     "    * cos(radians(" + inputLAT + "))" +
                     "    * cos(radians(" + inputLNT + ") - radians(LNT)) " +
                     "    + sin(radians(LAT)) * sin(radians(" + inputLAT + ")))), 4)" +
-
 
                     " ;";
 

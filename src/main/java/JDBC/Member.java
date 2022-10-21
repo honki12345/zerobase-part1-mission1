@@ -23,8 +23,8 @@ public class Member {
     public String X_SWIFI_INOUT_DOOR;   // 실내외구분
 
     public String X_SWIFI_REMARS3;  // wifi 접속환경
-    public String LNT; //x좌표 -
-    public String LAT; //y좌표 - 위도
+    public String LAT; //x좌표 -
+    public String LNT; //y좌표 - 위도
 
     public String WORK_DTTM;    // 작업일자
 
